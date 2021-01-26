@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Hit rate to Bullseye</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.0/nouislider.min.css" media="all">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.0/nouislider.min.js"></script>
+  <script type="text/javascript" src="./js/hit_rate.js"></script>
+</head>
+<body>
+
+<h2>Grouping Radius - Darts Labo</h2>
+
+<div id="canvas_wrapper">
+  <canvas style="margin: auto; display: block;" id="canvas"></canvas>
+</div>
+
+<div id="sliders">
+  <div id="hit-rate">
+    <h3>ブル率 / Hit rate to Bullseye</h3>
+    <input style="font-size: x-large" size=6 id="text-hit-rate" type="text" value="20" /> (％)
+    <span style="display: inline-block; width: 220px; margin: 15px;" id="slider-hit-rate"></span>
+  </div>
+
+  <div id="grouping">
+    <h3>グルーピング半径 / Grouping Radius</h3>
+    <input style="font-size: x-large" size=6 id="text-grouping" type="text" value="49.19" /> (㎜)
+    <span style="display: inline-block; width: 220px; margin: 15px;" id="slider-grouping"></span>
+  </div>
+</div>
+
+</body>
+</html>
