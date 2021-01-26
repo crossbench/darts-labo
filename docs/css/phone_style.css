@@ -1,0 +1,26 @@
+﻿body{ 
+  zoom: 50%;
+}
+
+td.title {
+  text-align: center;
+  line-height: 140%;
+}
+
+span.opponent {
+  display: inline-block;
+  width: 45px;
+  font-family: monospace;
+  font-size: xx-small ;
+  letter-spacing: -3px;
+}
+
+div.navigation a{
+  display: inline-block;
+  font-size: large;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 10px 5px;
+}

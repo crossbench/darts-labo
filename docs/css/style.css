@@ -1,0 +1,212 @@
+﻿h1{
+  font-size: 150%;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+h3{
+  text-align: right;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+h3.update{
+  display: none;
+}
+
+div.summary{
+  margin-left: 30px;
+}
+
+div.navi{
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 2px;
+}
+
+pre.summary{
+  font-family: Osaka-mono, "Osaka-等幅", "ＭＳ ゴシック", monospace;
+  font-size: x-large;
+}
+
+pre.detail{
+  font-family: Osaka-mono, "Osaka-等幅", "ＭＳ ゴシック", monospace;
+  font-size: large;
+}
+
+table {
+  border: 1px solid #333;
+  margin: auto;
+}
+
+tr {
+  border: 1px solid #333;
+}
+
+td {
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+td.value {
+  width: 3.5em;
+  text-align: right;
+  color: #333;
+  font-size: large;
+}
+
+td.name {
+  font-size: large;
+}
+
+td.player_name {
+  width: 6em;
+}
+
+td.game_result {
+  text-align: center;
+  font-size: x-large;
+  line-height: 110%;
+}
+
+td.game_name {
+  text-align: center;
+  font-size: small;
+}
+
+td.caption_winlose {
+  text-align: center;
+  font-size: 8pt;
+}
+
+td.title {
+  text-align: center;
+  line-height: 160%;
+}
+
+td.rating-N  { background-color: #CCCCCC; }
+td.rating-C  { background-color: #39B900; }
+td.rating-B  { background-color: #1170FF; }
+td.rating-A  { background-color: #FF8519; }
+td.rating-AA { background-color: #FF0000; }
+
+td.home { background-color: #ffcccc; }
+td.away { background-color: #ccccff; }
+
+tr.overview td{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+tr.overview-dartslive td{
+  background-color: #339;
+  color: #fff;
+  text-align: center;
+}
+
+tr.overview-phoenix td{
+  background-color: #933;
+  color: #fff;
+  text-align: center;
+}
+
+tr.captions td{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+tr.captions-dartslive td{
+  background-color: #339;
+  color: #fff;
+  text-align: center;
+  font-size: small;
+  line-height: 130%;
+}
+
+tr.captions-phoenix td{
+  background-color: #933;
+  color: #fff;
+  text-align: center;
+  font-size: small;
+  line-height: 130%;
+}
+
+td.team_name{
+  text-align: center;
+}
+
+td.game_stats{
+  text-align: right;
+  width: 4em;
+}
+
+td.player_flight{
+  text-align: center;
+  width: 2em;
+}
+
+td.game_flight{
+  text-align: center;
+  color: #fff;
+  width: 2em;
+}
+
+td.player_rating{
+  text-align: center;
+  width: 2em;
+}
+
+td.game_rating{
+  text-align: right;
+  width: 3em;
+}
+
+td.point{
+  text-align: center;
+  font-size: large;
+}
+
+td.diff{
+  font-size: small;
+}
+
+span.plus{  color: #f33; }
+span.minus{ color: #33f; }
+span.zero{  color: #333; }
+
+td.point_name{
+  text-align: center;
+  font-size: small;
+}
+
+span.opponent {
+  font-size: normal ;
+}
+
+span.num {
+  font-size: medium ;
+}
+
+span.win {
+  font-size: xx-large ;
+  color: red;
+}
+span.lose {
+  font-size: xx-large ;
+  color: blue;
+}
+
+span.result {
+  font-size: medium ;
+}
+
+span.navigation { font-size: large; }
+span.navigation a:active{ color: #ccc; }
+span.navigation a:link{ color: #ccc; }
+span.navigation a:visited{ color: #ccc; }
+span.navigation a:hover{ color: #ccc; }
