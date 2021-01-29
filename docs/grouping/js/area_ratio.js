@@ -23,7 +23,7 @@ function draw_grouping_circle(){
   var canvas_w  = document.getElementById('canvas_wrapper');
   var canvas    = document.getElementById('canvas');
   canvas.width  = 400;
-  canvas.height = 400;
+  canvas.height = 320;
 
   var h = Math.roundf( slider_hit_rate.noUiSlider.get(), 2 );
   var g_radius = grouping_radius_from_hit_rate( h );
