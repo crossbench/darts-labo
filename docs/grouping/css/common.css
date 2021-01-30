@@ -1,12 +1,24 @@
+body { 
+  user-select: none; /* CSS3 */
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Safari、Chromeなど */
+  -ms-user-select: none; /* IE10かららしい */
+}
+
 h2 { margin-bottom: 3px; }
 h3 { margin-bottom: 3px; }
 
+div#hit-rate{
+  margin-top: -20px;
+}
+
 table#cnd td { 
   border: 1px solid #333;
-  font-size: x-large;
+  font-size: large;
   font-family: monospace, monospace;
   padding: 5px;
 }
+
 table#cnd td.title { width: 65% }
 table#cnd{
   width: 100%;

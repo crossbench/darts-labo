@@ -1,3 +1,7 @@
+function no_scaling()    { document.addEventListener("touchmove", mobile_no_scroll, { passive: false }); }
+function return_scaling(){ document.removeEventListener('touchmove', mobile_no_scroll, { passive: false }); }
+function mobile_no_scroll(event) { if (event.touches.length >= 2) { event.preventDefault(); } }
+
 Math.roundf = function( value, keta ){
   return Math.round( value * ( 10.0 ** keta ) ) / 10.0 ** keta ;
 }
@@ -59,7 +63,8 @@ function draw_grouping_circle(){
   }else{
     var g_radius_a = grouping_radius_from_hit_rate_with_cep( h, 1.0 / 3 );
     var g_radius_b = grouping_radius_from_hit_rate_with_cep( h, 1.0 / 2 );
-    var g_radius_c = grouping_radius_from_hit_rate_with_cep( h, 1.0 - 1.0 / 24 );
+    var g_radius_c = grouping_radius_from_hit_rate_with_cep( h, 1.0 - 1.0 / 3 );
+    var g_radius_d = grouping_radius_from_hit_rate_with_cep( h, 1.0 - 1.0 / 24 );
 
     ctx.beginPath();
     ctx.strokeStyle = '#f33';
@@ -72,14 +77,20 @@ function draw_grouping_circle(){
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.strokeStyle = '#3f3';
+    ctx.strokeStyle = '#f3f';
     ctx.arc( canvas.width / 2, canvas.height / 2, ( canvas.width * 2 * g_radius_c / 1000 ), 0, Math.PI * 2);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.strokeStyle = '#3f3';
+    ctx.arc( canvas.width / 2, canvas.height / 2, ( canvas.width * 2 * g_radius_d / 1000 ), 0, Math.PI * 2);
     ctx.stroke();
 
     document.getElementById("prob_db").innerHTML   = prob_from_hit_rate( h ) + " %";
     document.getElementById("radius_33").innerHTML = g_radius_a + "mm";
     document.getElementById("radius_50").innerHTML = g_radius_b + "mm";
-    document.getElementById("radius_96").innerHTML = g_radius_c + "mm";
+    document.getElementById("radius_66").innerHTML = g_radius_c + "mm";
+    document.getElementById("radius_96").innerHTML = g_radius_d + "mm";
   }
 }
 
